@@ -3,7 +3,7 @@ return {
     "nvimtools/none-ls.nvim",
     event = "VeryLazy",
     opts = function ()
-      return require "custom.configs.null-ls"
+return require "custom.configs.null-ls"
     end
   },
 
@@ -29,6 +29,8 @@ return {
         "gopls",
         "tailwindcss-language-server",
         "typescript-language-server",
+        "pyright",
+        "clangd"
       }
     }
   },
@@ -46,7 +48,7 @@ return {
     end
   },
 
-  {
+  { -- Todo comments
     "folke/todo-comments.nvim",
     dependencies = { "nvim-lua/plenary.nvim" },
     event = "VeryLazy",
@@ -54,15 +56,5 @@ return {
       signs = true,
       sign_priority = 8,
     }
-  }
-
-  -- {
-  -- 	"nvim-treesitter/nvim-treesitter",
-  -- 	opts = {
-  -- 		ensure_installed = {
-  -- 			"vim", "lua", "vimdoc",
-  --      "html", "css", "javascript", "typescript", "tsx", "jsx"
-  -- 		},
-  -- 	},
-  -- },
+  },
 }
