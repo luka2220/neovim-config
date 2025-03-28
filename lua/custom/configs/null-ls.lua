@@ -6,6 +6,7 @@ local opts = {
     null_ls.builtins.formatting.prettierd,
     null_ls.builtins.formatting.gofmt,
     null_ls.builtins.formatting.goimports,
+    null_ls.builtins.formatting.stylua,
   },
   on_attach = function (client, bufnr)
     if client.supports_method("textDocument/formatting") then

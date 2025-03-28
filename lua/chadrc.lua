@@ -1,16 +1,19 @@
 ---@type ChadrcConfig
 local M = {}
 
+-- Dark: poimandres, seoul256_dark, gruvchad
+-- Light: seoul256_light
 M.base46 = {
-	theme = "poimandres",
+  theme = "gruvchad",
+  -- transparency = true,
 }
 
-local telescope = require("telescope")
+local telescope = require "telescope"
 
-telescope.setup({
-    defaults = {
-        file_ignore_patterns = { "node_modules/.*" },
-    },
-})
+telescope.setup {
+  defaults = {
+    file_ignore_patterns = { "node_modules/.*" },
+  },
+}
 
 return M
